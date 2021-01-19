@@ -90,6 +90,7 @@ def get_median(number_list):
             >>> bm.get_median(number_list2)
             35.5
     """
+    number_list.sort()
     if len(number_list) % 2 == 0: # 짝수개수면
         median_idx_1 = int(len(number_list)/2 -1)
         median_idx_2 = int(len(number_list)/2)
