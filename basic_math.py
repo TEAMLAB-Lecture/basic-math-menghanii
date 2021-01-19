@@ -91,10 +91,10 @@ def get_median(number_list):
             35.5
     """
     if len(number_list) % 2 == 0: # 짝수개수면
-        median_idx_1 = len(number_list)/2 -1
-        median_idx_2 = len(number_list)/2
+        median_idx_1 = int(len(number_list)/2 -1)
+        median_idx_2 = int(len(number_list)/2)
         median = (number_list[median_idx_1] + number_list[median_idx_2]) / 2
     else:
-        median_idx = len(number_list) // 2 
+        median_idx = int(len(number_list) // 2) 
         median = number_list[median_idx]
     return median
